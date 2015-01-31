@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .container
+        .text-center
+            .input-append
+                input#url_input(type="text", placeholder="url", value="http://www.yahoo.com") 
+                button.btn#url_button(type='button') Capture
+        .text-center
+            .input-prepend
+                .add-on View Width
+                input.span1#viewW(type="text", value=1024) 
+            .input-prepend
+                .add-on View Height
+                input.span1#viewH(type="text", value=768) 
+            .input-prepend
+                .add-on Clip Width
+                input.span1#clipW(type="text", value=1024) 
+            .input-prepend
+                .add-on Clip Height
+                input.span1#clipH(type="text", value=768) 
+        .text-center
+            img#web_image()
+
